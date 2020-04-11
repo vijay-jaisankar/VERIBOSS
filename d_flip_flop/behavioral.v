@@ -7,7 +7,7 @@ module dFlipFlop(q,d,clk);
 	output q;	// q will be an output but should be a 'reg' as it stores a value
 	reg q;
 	
-	always(@posedge clk)
+	always @(posedge clk)
 		q <= d;	// non-blocking statement
 	
 endmodule
